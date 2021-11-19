@@ -14,7 +14,7 @@
       ],
       "inputFolderRefs": [],
       "userFunctionName": "api_py_function",
-      "code": "\n# Insert here initialization code\n\n# This function is the entry point for your Python function API\n# You can call this function with passing \"param1\", \"param2\",\n# \"param3\" as arguments to the API call\n# (see REST API documentation)\nimport dataikuapi\n\n\ndef api_py_function(user):\n    \n    \n    apiKey \u003d \"QVQM945G9B7D5AJEV0CGM5LW7NGHGZDR\"\n    host \u003d \"https://ec2-13-212-82-30.ap-southeast-1.compute.amazonaws.com\"\n    client \u003d dataikuapi.DSSClient(host, apiKey)\n    client._session.verify \u003d False\n    \n    user_settings \u003d client.get_settings(user)\n    return settings.get_raw()[\u0027userProfile\u0027]\n    \n    \n",
+      "code": "\n# Insert here initialization code\n\n# This function is the entry point for your Python function API\n# You can call this function with passing \"param1\", \"param2\",\n# \"param3\" as arguments to the API call\n# (see REST API documentation)\nimport dataikuapi\n\n\ndef api_py_function(input_user):\n    \n    \n    apiKey \u003d \"QVQM945G9B7D5AJEV0CGM5LW7NGHGZDR\"\n    host \u003d \"https://ec2-13-212-82-30.ap-southeast-1.compute.amazonaws.com\"\n    client \u003d dataikuapi.DSSClient(host, apiKey)\n    client._session.verify \u003d False\n    \n    user \u003d client.get_user(input_user)\n    settings \u003d user.get_Settings()\n    return settings.get_raw()[\u0027userProfile\u0027]\n    \n    \n",
       "id": "getuser",
       "type": "PY_FUNCTION"
     }
@@ -24,11 +24,11 @@
     "queryKeys": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1637301390396
+    "lastModifiedOn": 1637301499770
   },
   "creationTag": {
     "versionNumber": 0,
