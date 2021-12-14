@@ -41,11 +41,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1639497025976
+    "lastModifiedOn": 1639497056241
   },
   "creationTag": {
     "versionNumber": 0,
@@ -54,7 +54,9 @@
     },
     "lastModifiedOn": 1637218374620
   },
-  "tags": [],
+  "tags": [
+    "gpu"
+  ],
   "customFields": {},
   "checklists": {
     "checklists": []
