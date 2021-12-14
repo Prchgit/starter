@@ -6,7 +6,7 @@ from dataiku import pandasutils as pdu
 # Read recipe inputs
 revenue_prediction = dataiku.Dataset("revenue_prediction")
 revenue_prediction_df = revenue_prediction.get_dataframe()
-
+sleep(300)
 
 # Compute recipe outputs from inputs
 # TODO: Replace this part by your actual code that computes the output, as a Pandas dataframe
