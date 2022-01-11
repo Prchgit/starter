@@ -5,18 +5,18 @@
   "name": "cleanup",
   "active": false,
   "creationTag": {
-    "versionNumber": 1,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1641882169148
-  },
-  "versionTag": {
     "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1641882186742
+  },
+  "versionTag": {
+    "versionNumber": 3,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1641882294593
   },
   "checklists": {
     "checklists": []
@@ -54,7 +54,7 @@
       {
         "id": "runmacro_pyrunnable_builtin-macros_clear-job-logs",
         "type": "runnable",
-        "name": "Step #1",
+        "name": "Clean Job logs",
         "runConditionType": "RUN_IF_STATUS_MATCH",
         "runConditionStatuses": [
           "SUCCESS",
@@ -66,6 +66,31 @@
         "maxRetriesOnFail": 0,
         "params": {
           "runnableType": "pyrunnable_builtin-macros_clear-job-logs",
+          "config": {
+            "age": 15,
+            "performDeletion": true
+          },
+          "adminConfig": {
+            "allProjects": true
+          },
+          "proceedOnFailure": false
+        }
+      },
+      {
+        "id": "runmacro_pyrunnable_builtin-macros_clear-scenario-logs",
+        "type": "runnable",
+        "name": "Clean Scenario logs",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "runnableType": "pyrunnable_builtin-macros_clear-scenario-logs",
           "config": {
             "age": 15,
             "performDeletion": true
