@@ -39,6 +39,9 @@
     "sample": {
       "color": "#2BB2AD"
     },
+    "gpu": {
+      "color": "#d66b9b"
+    },
     "sample_project": {
       "color": "#d66b9b"
     },
@@ -65,7 +68,6 @@
     },
     "creator_admin": {
       "color": "#1ac2ab"
-    },
-    "gpu": {}
+    }
   }
 }
