@@ -27,6 +27,155 @@
               "campain": true
             }
           }
+        },
+        {
+          "name": "crm_and_web_history_enriched #1",
+          "q": {
+            "features": {
+              "customer_id": "a4dc1548af",
+              "age": 51,
+              "price_first_item_purchased": 22,
+              "gender": "M",
+              "revenue": 153,
+              "ip_country": "United States",
+              "pages_visited": 7,
+              "campain": true
+            }
+          }
+        },
+        {
+          "name": "crm_and_web_history_enriched #2",
+          "q": {
+            "features": {
+              "customer_id": "e8f6f7853c",
+              "age": 38,
+              "price_first_item_purchased": 44,
+              "gender": "M",
+              "revenue": 225,
+              "ip_country": "United States",
+              "pages_visited": 9,
+              "campain": false
+            }
+          }
+        },
+        {
+          "name": "crm_and_web_history_enriched #3",
+          "q": {
+            "features": {
+              "customer_id": "5802162c20",
+              "age": 63,
+              "price_first_item_purchased": 28,
+              "gender": "F",
+              "revenue": 159,
+              "ip_country": "United States",
+              "pages_visited": 6,
+              "campain": false
+            }
+          }
+        },
+        {
+          "name": "crm_and_web_history_enriched #4",
+          "q": {
+            "features": {
+              "customer_id": "67dc195843",
+              "price_first_item_purchased": 22,
+              "gender": "M",
+              "revenue": 154,
+              "ip_country": "United States",
+              "pages_visited": 14,
+              "campain": true
+            }
+          }
+        },
+        {
+          "name": "crm_and_web_history_enriched #5",
+          "q": {
+            "features": {
+              "customer_id": "7c52e0eab6",
+              "age": 40,
+              "price_first_item_purchased": 42,
+              "gender": "F",
+              "revenue": 167,
+              "ip_country": "United States",
+              "pages_visited": 9,
+              "campain": false
+            }
+          }
+        },
+        {
+          "name": "crm_and_web_history_enriched #6",
+          "q": {
+            "features": {
+              "customer_id": "ef433d39c6",
+              "age": 30,
+              "price_first_item_purchased": 22,
+              "gender": "M",
+              "revenue": 86,
+              "ip_country": "South Africa",
+              "pages_visited": 3,
+              "campain": false
+            }
+          }
+        },
+        {
+          "name": "crm_and_web_history_enriched #7",
+          "q": {
+            "features": {
+              "customer_id": "17b8b214b0",
+              "age": 39,
+              "price_first_item_purchased": 10,
+              "gender": "F",
+              "revenue": 149,
+              "ip_country": "China",
+              "pages_visited": 7,
+              "campain": false
+            }
+          }
+        },
+        {
+          "name": "crm_and_web_history_enriched #8",
+          "q": {
+            "features": {
+              "customer_id": "1c3ddff940",
+              "age": 51,
+              "price_first_item_purchased": 28,
+              "gender": "F",
+              "revenue": 195,
+              "ip_country": "Spain",
+              "pages_visited": 11,
+              "campain": false
+            }
+          }
+        },
+        {
+          "name": "crm_and_web_history_enriched #9",
+          "q": {
+            "features": {
+              "customer_id": "61a7d084f5",
+              "age": 58,
+              "price_first_item_purchased": 44,
+              "gender": "M",
+              "revenue": 195,
+              "ip_country": "Germany",
+              "pages_visited": 6,
+              "campain": true
+            }
+          }
+        },
+        {
+          "name": "crm_and_web_history_enriched #10",
+          "q": {
+            "features": {
+              "customer_id": "61a7d084f5",
+              "age": 58,
+              "price_first_item_purchased": 117,
+              "gender": "F",
+              "revenue": 362,
+              "ip_country": "Germany",
+              "pages_visited": 6,
+              "campain": true
+            }
+          }
         }
       ],
       "enrichMapping": [],
@@ -42,11 +191,11 @@
     "queryKeys": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1642157832164
+    "lastModifiedOn": 1642157841801
   },
   "creationTag": {
     "versionNumber": 0,
