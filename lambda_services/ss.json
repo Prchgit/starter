@@ -12,7 +12,23 @@
         "subChunkSize": 5000,
         "shapleyBackgroundSize": 100
       },
-      "testQueries": [],
+      "testQueries": [
+        {
+          "name": "crm_and_web_history_enriched #1",
+          "q": {
+            "features": {
+              "customer_id": "a4dc1548af",
+              "age": 51,
+              "price_first_item_purchased": 22,
+              "gender": "M",
+              "revenue": 153,
+              "ip_country": "United States",
+              "pages_visited": 7,
+              "campain": true
+            }
+          }
+        }
+      ],
       "enrichMapping": [],
       "healthCheckQueries": [],
       "returnPostEnrichData": false,
@@ -26,11 +42,11 @@
     "queryKeys": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1642157489360
+    "lastModifiedOn": 1642157832164
   },
   "creationTag": {
     "versionNumber": 0,
