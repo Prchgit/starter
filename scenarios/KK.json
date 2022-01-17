@@ -12,11 +12,11 @@
     "lastModifiedOn": 1642386077537
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1642386077537
+    "lastModifiedOn": 1642386421237
   },
   "checklists": {
     "checklists": []
@@ -30,7 +30,47 @@
   "triggers": [],
   "reporters": [],
   "params": {
-    "steps": []
+    "steps": [
+      {
+        "id": "bundle hello",
+        "type": "prepare_bundle",
+        "name": "Step #1",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "bundleId": "hello",
+          "transmogrify": true,
+          "targetVariable": "myvar",
+          "publishedProjectKey": "DKU_TSHIRTS",
+          "publishOnDeployer": true
+        }
+      },
+      {
+        "id": "deploy DKU_TSHIRTS-on-auto",
+        "type": "update_projectdeployer_deployment",
+        "name": "Step #2",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "deploymentId": "DKU_TSHIRTS-on-auto",
+          "newVersionId": "hello"
+        }
+      }
+    ]
   },
   "automationLocal": false,
   "customFields": {}
