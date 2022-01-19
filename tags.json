@@ -15,6 +15,9 @@
     "Update model": {
       "color": "#ee874a"
     },
+    "recipe-editor": {
+      "color": "#1ac2ab"
+    },
     "Regression": {
       "color": "#de3b56"
     },
@@ -68,7 +71,6 @@
     },
     "creator_admin": {
       "color": "#1ac2ab"
-    },
-    "recipe-editor": {}
+    }
   }
 }
