@@ -4,19 +4,20 @@
   "type": "step_based",
   "name": "build_dataset",
   "active": false,
+  "runAsUser": "test",
   "creationTag": {
-    "versionNumber": 3,
-    "lastModifiedBy": {
-      "login": "admin"
-    },
-    "lastModifiedOn": 1641880986765
-  },
-  "versionTag": {
     "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
     "lastModifiedOn": 1641880987326
+  },
+  "versionTag": {
+    "versionNumber": 5,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1643005793160
   },
   "checklists": {
     "checklists": []
@@ -80,6 +81,31 @@
           ],
           "jobType": "RECURSIVE_BUILD",
           "refreshHiveMetastore": true,
+          "proceedOnFailure": false
+        }
+      },
+      {
+        "id": "runmacro_pyrunnable_builtin-macros_clear-job-logs",
+        "type": "runnable",
+        "name": "Step #3",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "runnableType": "pyrunnable_builtin-macros_clear-job-logs",
+          "config": {
+            "age": 15,
+            "performDeletion": false
+          },
+          "adminConfig": {
+            "allProjects": false
+          },
           "proceedOnFailure": false
         }
       }
