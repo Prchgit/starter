@@ -4,7 +4,7 @@
   "optionalDependencies": false,
   "params": {
     "envSelection": {
-      "envMode": "EXPLICIT_ENV",
+      "envMode": "USE_BUILTIN_MODE",
       "envName": "wdc"
     },
     "containerSelection": {
@@ -41,11 +41,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1642127542110
+    "lastModifiedOn": 1643007534872
   },
   "creationTag": {
     "versionNumber": 0,
