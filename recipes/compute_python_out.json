@@ -7,7 +7,7 @@
       "envMode": "USE_BUILTIN_MODE"
     },
     "containerSelection": {
-      "containerMode": "EXPLICIT_CONTAINER",
+      "containerMode": "NONE",
       "containerConf": "eks-default"
     },
     "skipPrerunValidate": false
@@ -41,11 +41,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1642563327850
+    "lastModifiedOn": 1643084107004
   },
   "creationTag": {
     "versionNumber": 0,
