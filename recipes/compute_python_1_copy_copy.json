@@ -4,6 +4,7 @@
   "optionalDependencies": false,
   "params": {
     "schemaMode": "STRICT_SYNC",
+    "engineType": "DSS",
     "forcePipelineableForTests": false,
     "engineParams": {
       "maxThreads": 4,
@@ -74,11 +75,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1642585406792
+    "lastModifiedOn": 1643084272346
   },
   "creationTag": {
     "versionNumber": 0,
