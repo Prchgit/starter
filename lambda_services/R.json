@@ -6,7 +6,13 @@
         "envMode": "INHERIT"
       },
       "passArgumentsAsList": false,
-      "testQueries": [],
+      "testQueries": [
+        {
+          "q": {
+            "param1": "5"
+          }
+        }
+      ],
       "inputFolderRefs": [],
       "userFunctionName": "api_r_function",
       "code": "\n# Insert here initialization code\n# You can retrieve absolute paths to the resource folders\n# using dkuAPINodeGetResourceFolders()\n# (returns a vector of character)\n\n# This function is the entry point for your R function API\n# You can call this function with passing \"param1\", \"param2\",\n# \"param3\" as arguments to the API call\n# (see REST API documentation)\napi_r_function \u003c- function(param1) {\n    # All parameters are passed as character\n    as.integer(param1)\n}\n",
@@ -19,11 +25,11 @@
     "queryKeys": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1644497684404
+    "lastModifiedOn": 1644497703859
   },
   "creationTag": {
     "versionNumber": 0,
