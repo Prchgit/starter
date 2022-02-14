@@ -7,7 +7,7 @@
       "envMode": "INHERIT"
     },
     "containerSelection": {
-      "containerMode": "NONE",
+      "containerMode": "INHERIT",
       "containerConf": "eks-default"
     },
     "skipPrerunValidate": false
@@ -41,11 +41,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 11,
+    "versionNumber": 12,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1643007314458
+    "lastModifiedOn": 1644819579658
   },
   "creationTag": {
     "versionNumber": 0,
