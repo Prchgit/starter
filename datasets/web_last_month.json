@@ -1,92 +1,232 @@
 {
+  "type": "UploadedFiles",
+  "managed": false,
+  "description": "### Contents\nThis dataset contains last month customers interactions on the company web site.\n\n### Capture the last customer trend\nThis data will be used to update our revenue prediction model.",
+  "formatType": "csv",
   "checklists": {
     "checklists": []
-  }, 
-  "checks": [], 
+  },
+  "checks": [],
   "customMeta": {
     "kv": {}
-  }, 
-  "description": "### Contents\nThis dataset contains last month customers interactions on the company web site.\n\n### Capture the last customer trend\nThis data will be used to update our revenue prediction model.", 
+  },
   "flowOptions": {
-    "crossProjectBuildBehavior": "DEFAULT", 
-    "rebuildBehavior": "NORMAL"
-  }, 
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
   "formatParams": {
-    "arrayMapFormat": "delimited", 
-    "charset": "utf8", 
-    "compress": "", 
-    "dateSerializationFormat": "ISO", 
-    "escapeChar": "\\", 
+    "style": "excel",
+    "charset": "utf8",
+    "separator": ",",
+    "quoteChar": "\"",
+    "escapeChar": "\\",
+    "dateSerializationFormat": "ISO",
+    "arrayMapFormat": "delimited",
     "hiveSeparators": [
-      "\u0002", 
-      "\u0003", 
-      "\u0004", 
-      "\u0005", 
-      "\u0006", 
-      "\u0007", 
+      "\u0002",
+      "\u0003",
+      "\u0004",
+      "\u0005",
+      "\u0006",
+      "\u0007",
       "\b"
-    ], 
-    "normalizeBooleans": false, 
-    "normalizeDoubles": false, 
-    "parseHeaderRow": true, 
-    "probableNumberOfRecords": 0, 
-    "quoteChar": "\"", 
-    "readAdditionalColumnsBehavior": "INSERT_IN_DATA_WARNING", 
-    "readDataTypeMismatchBehavior": "DISCARD_WARNING", 
-    "readMissingColumnsBehavior": "DISCARD_SILENT", 
-    "separator": ",", 
-    "skipRowsAfterHeader": 0, 
-    "skipRowsBeforeHeader": 0, 
-    "style": "excel", 
-    "writeDataTypeMismatchBehavior": "DISCARD_WARNING"
-  }, 
-  "formatType": "csv", 
-  "managed": false, 
-  "metrics": {
-    "probes": []
-  }, 
-  "params": {}, 
+    ],
+    "skipRowsBeforeHeader": 0,
+    "parseHeaderRow": true,
+    "skipRowsAfterHeader": 0,
+    "probableNumberOfRecords": 0,
+    "normalizeBooleans": false,
+    "normalizeDoubles": false,
+    "readAdditionalColumnsBehavior": "INSERT_IN_DATA_WARNING",
+    "readMissingColumnsBehavior": "DISCARD_SILENT",
+    "readDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "writeDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "fileReadFailureBehavior": "FAIL",
+    "compress": ""
+  },
   "partitioning": {
-    "dimensions": [], 
-    "ignoreNonMatchingFile": false
-  }, 
+    "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": []
+  },
+  "versionTag": {
+    "versionNumber": 1,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1645168108103
+  },
+  "tags": [],
+  "params": {
+    "notReadyIfEmpty": false,
+    "filesSelectionRules": {
+      "mode": "ALL",
+      "excludeRules": [],
+      "includeRules": [],
+      "explicitFiles": []
+    }
+  },
   "schema": {
     "columns": [
       {
-        "maxLength": 1000, 
-        "name": "customer_id", 
-        "timestampNoTzAsDate": false, 
-        "type": "string"
-      }, 
+        "name": "customer_id",
+        "type": "string",
+        "maxLength": 1000
+      },
       {
-        "maxLength": 1000, 
-        "name": "ip", 
-        "timestampNoTzAsDate": false, 
-        "type": "string"
-      }, 
+        "name": "ip",
+        "type": "string",
+        "maxLength": 1000
+      },
       {
-        "maxLength": 1000, 
-        "name": "pages_visited", 
-        "timestampNoTzAsDate": false, 
-        "type": "string"
-      }, 
+        "name": "pages_visited",
+        "type": "string",
+        "maxLength": 1000
+      },
       {
-        "maxLength": 1000, 
-        "name": "campain", 
-        "timestampNoTzAsDate": false, 
-        "type": "string"
+        "name": "campain",
+        "type": "string",
+        "maxLength": 1000
       }
-    ], 
-    "userModified": false
-  }, 
-  "tags": [], 
-  "type": "UploadedFiles", 
-  "versionTag": {
-    "lastModifiedBy": {
-      "displayName": "Administrator", 
-      "login": "admin"
-    }, 
-    "lastModifiedOn": 1461148471586, 
-    "versionNumber": 0
-  }
+    ],
+    "userModified": true
+  },
+  "dkuProperties": [],
+  "metrics": {
+    "probes": [
+      {
+        "type": "basic",
+        "enabled": true,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Basic data",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "records",
+        "enabled": true,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Record count",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "col_stats",
+        "enabled": false,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Columns statistics",
+          "level": 2
+        },
+        "configuration": {
+          "aggregates": []
+        }
+      },
+      {
+        "type": "adv_col_stats",
+        "enabled": false,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Most frequent values",
+          "level": 3
+        },
+        "configuration": {
+          "aggregates": [],
+          "numberTopValues": 10
+        }
+      },
+      {
+        "type": "percentile_stats",
+        "enabled": false,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Columns percentiles",
+          "level": 4
+        },
+        "configuration": {
+          "aggregates": []
+        }
+      },
+      {
+        "type": "verify_col",
+        "enabled": false,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Data validity",
+          "level": 4
+        },
+        "configuration": {
+          "aggregates": []
+        }
+      }
+    ],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "partition": "NP",
+      "columns": [],
+      "metrics": []
+    }
+  },
+  "metricsChecks": {
+    "runOnBuild": false,
+    "checks": [],
+    "displayedState": {
+      "partition": "NP",
+      "checks": []
+    }
+  },
+  "customFields": {}
 }
