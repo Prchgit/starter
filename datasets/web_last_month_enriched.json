@@ -60,11 +60,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1645168126071
+    "lastModifiedOn": 1645168150784
   },
   "tags": [],
   "params": {
@@ -236,7 +236,6 @@
         "reporting:BUILD_SUCCESS",
         "basic:COUNT_COLUMNS",
         "basic:COUNT_FILES",
-        "reporting:METRICS_COMPUTATION_DURATION",
         "basic:SIZE"
       ]
     }
