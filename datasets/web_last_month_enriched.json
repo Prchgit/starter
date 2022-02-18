@@ -60,11 +60,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1486124433851
+    "lastModifiedOn": 1645168126071
   },
   "tags": [],
   "params": {
@@ -111,7 +111,7 @@
         "maxLength": 1000
       }
     ],
-    "userModified": false
+    "userModified": true
   },
   "dkuProperties": [],
   "metrics": {
@@ -157,7 +157,8 @@
           "level": 3
         },
         "configuration": {
-          "aggregates": []
+          "aggregates": [],
+          "numberTopValues": 10
         }
       },
       {
@@ -202,6 +203,10 @@
           },
           "partitionSelectionMethod": "ALL",
           "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
           "samplingMethod": "FULL",
           "maxRecords": -1,
           "targetRatio": 0.02,
@@ -215,11 +220,25 @@
       "impala": {
         "active": true
       },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
       "python": {}
     },
     "displayedState": {
+      "partition": "NP",
       "columns": [],
-      "metrics": []
+      "metrics": [
+        "reporting:BUILD_START_DATE",
+        "reporting:BUILD_DURATION",
+        "reporting:WARNING_COUNT",
+        "reporting:BUILD_SUCCESS",
+        "basic:COUNT_COLUMNS",
+        "basic:COUNT_FILES",
+        "reporting:METRICS_COMPUTATION_DURATION",
+        "basic:SIZE"
+      ]
     }
   },
   "metricsChecks": {
