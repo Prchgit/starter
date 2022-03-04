@@ -20,7 +20,7 @@
           "map": {}
         },
         "sparkConfig": {
-          "inheritConf": "default",
+          "inheritConf": "sample-local-config",
           "conf": []
         },
         "executionEngine": "SPARK_SUBMIT",
