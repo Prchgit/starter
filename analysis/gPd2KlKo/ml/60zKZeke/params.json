@@ -1856,6 +1856,10 @@
     "containerMode": "INHERIT"
   },
   "sparkParams": {
+    "sparkConf": {
+      "inheritConf": "default",
+      "conf": []
+    },
     "sparkUseGlobalMetastore": false,
     "sparkPreparedDFStorageLevel": "MEMORY_AND_DISK",
     "sparkRepartitionNonHDFS": 1,
