@@ -4,7 +4,7 @@
   "optionalDependencies": false,
   "params": {
     "envSelection": {
-      "envMode": "INHERIT"
+      "envMode": "USE_BUILTIN_MODE"
     },
     "containerSelection": {
       "containerMode": "INHERIT",
@@ -41,11 +41,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 16,
+    "versionNumber": 17,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1646356771294
+    "lastModifiedOn": 1646356857972
   },
   "creationTag": {
     "versionNumber": 0,
