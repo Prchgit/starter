@@ -77,11 +77,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1650339433781
+    "lastModifiedOn": 1650339454769
   },
   "description": "### Process explained\n\n- __extracts the country__ of each customer knowing his IP address.\n- __adding the monthly revenue__ each customer has generated (This data is extracted from the last month CRM data).",
   "tags": [],
