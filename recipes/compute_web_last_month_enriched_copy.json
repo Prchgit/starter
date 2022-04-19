@@ -4,13 +4,16 @@
   "optionalDependencies": false,
   "params": {
     "schemaMode": "STRICT_SYNC",
-    "engineType": "DSS",
+    "engineType": "SPARK",
     "forcePipelineableForTests": false,
     "engineParams": {
       "maxThreads": 4,
       "tdchParams": {
         "splitMode": "DEFAULT",
         "numberOfExecutors": 2
+      },
+      "synapseParams": {
+        "usePolybase": false
       },
       "sparkSQL": {
         "overwriteOutputSchema": false,
@@ -75,11 +78,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1643084242320
+    "lastModifiedOn": 1650339433792
   },
   "creationTag": {
     "versionNumber": 0,

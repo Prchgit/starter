@@ -1,81 +1,81 @@
 {
+  "columnsSelection": {
+    "mode": "ALL"
+  },
+  "explorationSampling": {
+    "_refreshTrigger": 0,
+    "selection": {
+      "maxRecords": 30000,
+      "partitionSelectionMethod": "ALL",
+      "targetRatio": 0.02,
+      "samplingMethod": "HEAD_SEQUENTIAL"
+    },
+    "autoRefreshSample": false
+  },
+  "explorationFilters": [],
+  "charts": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
   "steps": [
     {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
       "type": "GeoIPResolver",
       "params": {
         "inCol": "ip",
-        "outColPrefix": "ip_",
         "extract_country": true,
-        "extract_countrycode": false,
-        "extract_region": false,
+        "extract_countrycode3": false,
         "extract_city": false,
-        "extract_postalcode": false,
         "extract_latlng": false,
+        "extract_countrycode": false,
+        "extract_postalcode": false,
         "extract_timezone": false,
+        "outColPrefix": "ip_",
         "extract_continentcode": false,
-        "extract_geopoint": false,
-        "extract_countrycode3": false
+        "extract_region": false,
+        "extract_geopoint": false
       },
-      "metaType": "PROCESSOR",
-      "preview": false,
-      "disabled": false,
       "alwaysShowComment": false
     },
     {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
       "type": "MemoryEquiJoiner",
       "params": {
-        "leftCol": "customer_id",
-        "rightInput": "crm_last_month",
         "rightCol": "customer_id",
+        "leftCol": "customer_id",
         "copyColumns": [
           "revenue"
         ],
         "copyPrefix": "",
-        "fuzzy": false,
-        "maxLevenshtein": 1,
         "sortAlphabetically": false,
-        "clearStopWords": false,
         "normalize": false,
-        "stem": false,
-        "language": "english"
+        "maxLevenshtein": 1,
+        "language": "english",
+        "clearStopWords": false,
+        "fuzzy": false,
+        "rightInput": "crm_last_month",
+        "stem": false
       },
-      "metaType": "PROCESSOR",
-      "preview": false,
-      "disabled": false,
       "alwaysShowComment": false
     }
   ],
+  "previewMode": "ALL_ROWS",
+  "chartsEngine": "LINO",
   "tags": [],
-  "origin": "PREPARE_RECIPE",
-  "columnsSelection": {
-    "mode": "ALL"
+  "vizSampling": {
+    "_refreshTrigger": 0,
+    "autoRefreshSample": false
   },
+  "analysisColumnData": {},
+  "globalSearchQuery": "",
   "coloring": {
     "scheme": "MEANING_AND_STATUS",
     "individualColumns": [],
     "valueColoringMode": "HASH"
-  },
-  "analysisColumnData": {},
-  "explorationSampling": {
-    "selection": {
-      "samplingMethod": "HEAD_SEQUENTIAL",
-      "partitionSelectionMethod": "ALL",
-      "maxRecords": 30000,
-      "targetRatio": 0.02
-    },
-    "autoRefreshSample": false,
-    "_refreshTrigger": 0
-  },
-  "vizSampling": {
-    "autoRefreshSample": false,
-    "_refreshTrigger": 0
-  },
-  "exploreUIParams": {
-    "autoRefresh": true
-  },
-  "globalSearchQuery": "",
-  "explorationFilters": [],
-  "previewMode": "ALL_ROWS",
-  "charts": [],
-  "chartsEngine": "LINO"
+  }
 }
