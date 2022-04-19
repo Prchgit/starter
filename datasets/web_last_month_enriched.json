@@ -11,7 +11,7 @@
     "kv": {}
   },
   "flowOptions": {
-    "virtualizable": false,
+    "virtualizable": true,
     "rebuildBehavior": "NORMAL",
     "crossProjectBuildBehavior": "DEFAULT"
   },
@@ -60,11 +60,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1645168172138
+    "lastModifiedOn": 1650340109133
   },
   "tags": [],
   "params": {
@@ -80,36 +80,12 @@
   },
   "schema": {
     "columns": [
-      {
-        "name": "customer_id",
-        "type": "string",
-        "maxLength": 1000
-      },
-      {
-        "name": "ip",
-        "type": "string",
-        "maxLength": 1000
-      },
-      {
-        "name": "ip_country",
-        "type": "string",
-        "maxLength": 1000
-      },
-      {
-        "name": "pages_visited",
-        "type": "double",
-        "maxLength": 1000
-      },
-      {
-        "name": "campain",
-        "type": "boolean",
-        "maxLength": 1000
-      },
-      {
-        "name": "revenue",
-        "type": "double",
-        "maxLength": 1000
-      }
+      {"name":"customer_id","type":"string","maxLength":1000},
+      {"name":"ip","type":"string","maxLength":1000},
+      {"name":"ip_country","type":"string","maxLength":1000},
+      {"name":"pages_visited","type":"double","maxLength":1000},
+      {"name":"campain","type":"boolean","maxLength":1000},
+      {"name":"revenue","type":"double","maxLength":1000}
     ],
     "userModified": true
   },
