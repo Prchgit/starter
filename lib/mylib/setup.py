@@ -5,7 +5,7 @@ setup(
     name='multip',
     url='https://github.com/Prchgit/mylib/',
     author='Prashant',
-    author_email='jladan@uwaterloo.ca',
+    author_email='ps@ps.com',
     # Needed to actually package something
     packages=['multip'],
     # Needed for dependencies
