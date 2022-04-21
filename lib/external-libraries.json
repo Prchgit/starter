@@ -4,6 +4,10 @@
       "remote": "git@github.com:Prchgit/mylib.git",
       "checkout": "refs/heads/main",
       "remotePath": "",
+      "lastHash": "a2f35d6ee3157fdfe49af1c0b4cbac630fff27e0",
+      "conflictingFiles": [],
+      "resolvedFiles": [],
+      "faultyHash": "",
       "isDirty": false
     }
   },
